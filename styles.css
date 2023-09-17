@@ -1,0 +1,155 @@
+/* Reset de estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    background-image: url('dark-hell2.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: 'Cinzel Decorative', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px; /* Centraliza a imagem de fundo nos dispositivos móveis */
+    background-position: center center;
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa */
+    position: relative; /* Adiciona posição relativa para o elemento pseudo ::before */
+    backdrop-filter: blur(2px); /* Ajuste o valor de "5px" conforme desejado */
+    
+}
+
+/* Estilos para telas maiores (computadores) */
+@media (min-width: 768px) {
+    body {
+        /* Estilos específicos para computadores aqui */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Garante que o conteúdo ocupará toda a altura da tela */
+    }
+
+    .form-container {
+        max-width: 600px; /* Ajuste o valor conforme necessário */
+        background-color: rgba(34, 34, 34, 0.7);
+        padding: 40px;
+        border: 2px solid #ff4500;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        color: #FFF;
+    }
+
+} 
+
+/* Estilo do título H1 */
+
+/* Estilo 1 de gradiente vermelho escuro para texto */
+.gradient-title {
+    background-image: linear-gradient(to bottom, #ffffff, #FF6600); /* Cores do gradiente */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px; /* Tamanho da fonte */
+    font-weight: bold; /* Estilo da fonte */
+  
+}
+
+.frase1 {
+  background-image: linear-gradient(45, #FF4500, #FF660);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FFF;
+  
+}
+
+
+
+
+h1 {
+    margin-top: 20px; /* Ajusta o espaço acima do título */
+    padding-top: 30px; /* Aumenta o espaço acima do texto */
+    padding-bottom: 80px; /* Aumenta o espaço abaixo do texto */
+}
+
+
+
+
+h2 {
+    padding-top: 15px; /* Aumenta o espaço acima do texto */
+    padding-bottom: 8px; /* Aumenta o espaço abaixo do texto */
+}
+
+
+/* Estilo do formulário */
+form {
+    max-width: 200x; /* Largura máxima do formulário reduzida */
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid #ff4500; /* Borda ao redor do formulário */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: rgba(34, 34, 34, 0.7); /* Fundo com transparência */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    color: #FFF;
+}
+
+/* Estilo dos rótulos */
+label {
+    display: block;
+    font-size: 12px; /* Tamanho de fonte reduzido para rótulos */
+    margin-top: 20px;
+}
+
+/* Estilo dos campos de entrada de texto e seleção */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 5px; /* Reduzido o preenchimento para diminuir a caixa de seleção */
+    font-size: 12px; /* Tamanho de fonte reduzido para campos de entrada */
+    background-color: #333;
+    border: none;
+    border-bottom: 2px solid #ff4500;
+    color: #FFF;
+    outline: none;
+}
+
+/* Estilo do botão de envio */
+button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    border: none;
+    color: #000;
+    font-size: 14px; /* Tamanho de fonte reduzido para o botão */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    font-family: 'Cinzel Decorative', sans-serif;
+}
+
+/* Estilo do botão de envio no hover */
+button[type="submit"]:hover {
+    background-color: #ff6600;
+}
+
+/* Efeito de sombra nas bordas da página (vinheta) */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 80%, rgba(0, 0, 0, 0.8) 99%); /* Gradiente radial para criar o efeito de sombra */
+    pointer-events: none; /* Isso permite que os elementos abaixo sejam clicáveis */
+    
+}
